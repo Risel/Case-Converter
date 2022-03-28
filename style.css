@@ -1,25 +1,105 @@
-body, html { 
-  width: 100%;
-  height: 100%;
-  margin-left: 30px;
+* { 
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
-.title {
-  font-family:'Courier New', Courier, monospace;
+header {
   min-width: 100%;
-  min-height: 100%;
-  position: absolute;
+  height: 6em;
+  margin-bottom: 70px;
+  background-color: #000000;
+  background-image: linear-gradient(135deg, #000000 0%, #414141 74%);
+  justify-content: space-between;
+  text-transform: uppercase;
+  display: flex;
+}
+body {
+  background-color: #f5f3f3;
+}
+.headerStart {
+  text-align: justify;
+  font-size: 20px;
+  padding-left: 10px;
+  color: whitesmoke;
+  padding-top: 17px;
+}
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 16px;
+  padding: 8px;
+  padding-top: 25px;
+  color: whitesmoke;;
+}
+nav a:hover {
+  border-bottom: 2px solid whitesmoke;
+}
+.leftsideArea {
+  width: 60%;
+  margin-left: 10px;
+  float: left;
+}
+aside{
+  width: 36%;
+  float: right;
+  margin-right: 10px;
+}
+.mainBlock {
+  position: static;
+}
+#about {
+  font-size: 18px;
 }
 textarea{
   min-width: 93%;
 }
 .flex-item {
-  justify-content:center;
-  flex-wrap:wrap-reverse;
-  border-radius: 10%;
-  border: 1px;
+  margin-top: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid black;
   box-sizing: border-box;
   padding: 4px;
-  transition-property: background-color;
-  transition-duration: 3s;
-  background-color:coral;
+  background-color:white;
+  margin-bottom: 30px;
+}
+.flex-item:hover {
+  background-color: rgb(199, 195, 195);
+  transition: background-color 0.3s ease;
+}
+.contacts {
+  float: left;
+  clear:top;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.btnSend:hover {
+  background-color: rgb(199, 195, 195);
+  border: 1px solid black;
+  transition: background-color 0.3s ease;
+}
+.mainform {
+  border-radius: 6px;
+  float: left;
+  margin-bottom: 40px;
+}
+.msg {
+  margin-top: 10px;
+}
+.email{
+  margin-top: 10px;
+}
+.btnSend{
+  margin-top: 8px;
+}
+footer {
+  min-width: 100%;
+  height: 6em;
+  color: whitesmoke;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
