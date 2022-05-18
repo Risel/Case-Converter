@@ -1,105 +1,110 @@
 * { 
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header {
-  min-width: 100%;
-  height: 6em;
-  margin-bottom: 70px;
+.header {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+
   background-color: #000000;
   background-image: linear-gradient(135deg, #000000 0%, #414141 74%);
-  justify-content: space-between;
-  text-transform: uppercase;
-  display: flex;
 }
-body {
-  background-color: #f5f3f3;
+.header__logo {
+  font-size: 1.5rem;
+  color: #fff;
+
+  padding: 20px;
 }
-.headerStart {
-  text-align: justify;
-  font-size: 20px;
-  padding-left: 10px;
-  color: whitesmoke;
-  padding-top: 17px;
-}
-nav a{
-  display: inline-block;
+.header__navbar a {
+  position: relative;
+  padding-right: 25px;
+
   text-decoration: none;
-  font-style: normal;
-  font-size: 16px;
-  padding: 8px;
-  padding-top: 25px;
-  color: whitesmoke;;
+  font-size: 1.25rem;
+
+  color: #fff;
 }
-nav a:hover {
-  border-bottom: 2px solid whitesmoke;
+.header__navbar a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
 }
-.leftsideArea {
-  width: 60%;
-  margin-left: 10px;
-  float: left;
+
+.header__navbar a:hover:before {
+  width: 85%;
 }
-aside{
-  width: 36%;
-  float: right;
-  margin-right: 10px;
+
+.header__navbar a::before {
+  transition: width 0.35s;
 }
-.mainBlock {
-  position: static;
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 100%;
 }
-#about {
-  font-size: 18px;
+
+.converter {
+  width: 50%;
+  height: 50vh;
 }
-textarea{
-  min-width: 93%;
+
+.converter__area {
+  width: 100%;
+  height: 40vh;
 }
-.flex-item {
-  margin-top: 10px;
-  display: inline-block;
-  margin-right: 10px;
-  border: 1px solid black;
-  box-sizing: border-box;
-  padding: 4px;
-  background-color:white;
-  margin-bottom: 30px;
+.converter__buttons {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap row;
 }
-.flex-item:hover {
+
+.converter__buttons-button {
+  padding: 10px;
+  margin-right: 20px;
+  background-color: #fff;
+
+  border-radius: 8px;
+  border: 1px solid #4f4f4f;
+
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+
+
+.converter__buttons-button:hover {
   background-color: rgb(199, 195, 195);
   transition: background-color 0.3s ease;
 }
-.contacts {
-  float: left;
-  clear:top;
-  margin-left: 10px;
-  margin-top: 20px;
+
+.about {
+  font-size: 1.5rem;
+  padding-left: 30px;
 }
-.btnSend:hover {
-  background-color: rgb(199, 195, 195);
-  border: 1px solid black;
-  transition: background-color 0.3s ease;
-}
-.mainform {
-  border-radius: 6px;
-  float: left;
-  margin-bottom: 40px;
-}
-.msg {
-  margin-top: 10px;
-}
-.email{
-  margin-top: 10px;
-}
-.btnSend{
-  margin-top: 8px;
-}
+
 footer {
-  min-width: 100%;
-  height: 6em;
-  color: whitesmoke;
-  background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: space-around;
+  min-width: 100%;
+  height: 6em;
+  position: absolute;
+  bottom: 0;
+
+  color: #fff;
+  background-color: #000;
+
 }
+
