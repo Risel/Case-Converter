@@ -9,56 +9,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="headerStart">
+  <header class = "header">
+    <div class="header__logo">
       <h2>Case Converter</h2>
       <p>Transform your text easily</p>
     </div>
-    <nav>
-      <a href="#title">Try it</a>
-      <a href="#contactMe">Contact me</a>
+    <nav class = "header__navbar">
+      <a href = "#text">Try it</a>
+      <a href = "#contact">Contact me</a>
     </nav>
   </header>
-    <section class="leftsideArea">
-    <div class="btns">
-      <textarea name="text" id="text" cols="40" rows="10"></textarea>
-      <button id="upper-case" class="flex-item">UPPER CASE</button>
-      <button id="lower-case"class="flex-item">lower case</button>
-      <button id="proper-case"class="flex-item">Proper Case</button>
-      <button id="sentence-case"class="flex-item">Sentence case</button>
-      <button id="save-text-file" class="flex-item"><a>Save text file</a></button>
-    </div>
-  </section>
-  <aside>
-  <h2>About Service</h2>
-    <p>This is my first project done on JetBrains academy.It helps you to change the register of text without rerighting it. Just copy saved text from to the clickboard or save text file on your computer. Hope you like it!</p>
-    <p></p>
-  </aside>
-  </div>
-  <section id="contactMe">
-    <div class="contacts">
-      <h2>Contact me</h2>
-      <p>Any requests, offers or questions? Text me and I rejoicingly answer!</p>
-      <div class="form">
-        <form class="mainform" >
-          <p class="name">
-          <input type="text" name="name" value="Name" onblur="if(this.value.length == 0) this.value = 'Name'" onfocus="if(this.value == 'Name') this.value = '' "/>
-                <label for="name"></label>
-          </p>
-          <p class="email">
-            <input type="text" name="email" value="name@example.com" onblur="if(this.value.length == 0) this.value = 'name@example.com'" onfocus="if(this.value == 'name@example.com') this.value = '' " />
-                <label for="email" ></label>
-        </p>
-          <p class="msg">
-          <textarea name="msg" cols="50" rows="10" onblur="if(this.value.length == 0) this.value = 'Your message'" onfocus="if(this.value == 'Your message') this.value=''">Your message</textarea>
-          </p>
-          <p class="send" >
-          <input type="submit" value="Send" class="btnSend">
-        </p>
-    </form>
+    <div class="wrapper">
+      <div class="converter">
+        <textarea name="text" id="text" class="converter__area"></textarea>
+        <div class="converter__buttons">
+          <button id="upper-case" class="converter__buttons-button">UPPER CASE</button>
+          <button id="lower-case" class="converter__buttons-button">lower case</button>
+          <button id="proper-case" class="converter__buttons-button">Proper Case</button>
+          <button id="sentence-case" class="converter__buttons-button">Sentence case</button>
+          <button id="save-text-file" class="converter__buttons-button"><a>Save txt</a></button>
+        </div>
+      </div>
+      <div class="about">
+        <h2>About Service</h2>
+        <p>It's very useful tool, that allows you to transform your text in any of mentioned cases.</p>
+        <p>Accidentally clicked CAPSLOCK? Wrote all text with small letters? Not a problem! </p>
+        <p>Upper case makes your text look like "THIS"</p>
+        <p>Lower case makes your text look like "this"</p>
+        <p>Proper case makes your text look "Like This"</p>
+        <p>Sentence case makes your text look "Like this. Yes. Like this. "</p>
+
       </div>
     </div>
-  </section>
+    <div class="contacts" id="contact">
+      <h2>Contact me</h2>
+      <p>Any requests, offers or questions? Text me and I will answer!</p>
+   </div>
   <footer>
     <p>Copyright 2022 by Roman</p>
   </footer>
