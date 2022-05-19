@@ -58,6 +58,7 @@
 .converter {
   width: 50%;
   height: 50vh;
+  margin-left: 20px;
 }
 
 .converter__area {
